@@ -238,6 +238,7 @@ nav .hamburger.active .bar {
 .abt-container h1 {
     font-size: 35px;
     font-style: italic;
+    font-weight: bold;
 }
 
 .line {
