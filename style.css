@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 body {
     background-color: #323234;
@@ -159,7 +159,7 @@ nav .hamburger.active .bar {
 .left h1 {
     font-size: 4.5rem;
     color: var(--white);
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .left h4 {
@@ -228,222 +228,239 @@ nav .hamburger.active .bar {
 }
 
 /* Styling the About Page*/
-
+.about {
+    justify-content: center;
+}
 .abt-container {
-    color: var(--white);
-    margin-left: 60px;
-    margin-right: 6%;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px ;
+    display: flex;
+    column-gap: 30px;
+    margin: 1% 5%;
+    margin-bottom: 2%;
+    padding: 30px;
+    border-radius: 20px;
 }
 
-.abt-container h1 {
-    font-size: 35px;
-    font-style: italic;
+.abt-left img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.small-pic {
+    display: none;
+}
+
+.abt-right h1 {
+    color: var(--text-color);
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.abt-right h2 {
+    color: var(--white);
+    font-size: 30px;
+}
+
+.abt-right p {
+    color: var(--white);
+    font-weight: 200;
+    margin-top: 15px;
+    border-bottom: 2px solid darkgray;
+    padding-bottom: 20px;
+}
+
+.abt-right .abt-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.info {
+    color: white;
     font-weight: bold;
 }
 
-.line {
-    border-top: 4px solid var(--text-color);
-    width: 90px;
-    margin-bottom: 30px;
+.info span {
+    font-weight: 300;
+    margin-left: 10px;
 }
 
-.stats-info {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-around;
-    column-gap: 50px;
+.abt-right a {
+    text-decoration: none;
 }
 
-.stats i {
-    font-size: 30px;
-    margin-bottom: 10px;
-    margin-right: 10px;
+.abt-right a button {
+    margin-top: 20px;
+    height: 40px;
+    width: 140px;
+    background: var(--text-color);
+    border: 2px solid var(--text-color);
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.abt-right a button:hover {
+    transition: 0.4s ease-in;
+    background: transparent;
     color: var(--text-color);
+    font-weight: bold;
 }
-
-.stats span {
-    justify-content: center;
-    font-size: 28px;
-}
-
-.stats h3 {
-    margin-bottom: 20px;
-    color: rgba(0, 251, 255, 0.5);
-}
-
-.qoute {
-    margin: 30px 20% 50px 20%;
-}
-
-.qoute p {
-    font-weight: 100;
-    font-style: italic;
-}
-
-.who h1 {
-    text-align: center;
-    color: rgba(0, 251, 255, 0.5);
-    text-decoration: underline;
-}
-
-.first {
-    display: flex;
-    margin: 30px 60px;
-}
-
-.who-head {
-    width: 50%;
-    color: rgba(0, 251, 255, 0.5);
-}
-
-.who-par {
-    width: 90%;
-    text-align: center;
-}
-
-
 
 
 /* Resume Section*/
 .resume {
-    text-align: center;
-    justify-content: center;
+    margin-left: 65px;
+    margin-right: 50px;
 }
 
-.resume h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #fff;
-    font-style: italic;
-    font-weight: 150;
-    margin-top: 20px;
+.head-text {
+    font-size: 90px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 0.5px gray;
 }
 
-.arrow-line {
+.resume h1 {
+    position: absolute;
+    margin: 45px 5px;
+    color: var(--white);
+    font-size: 38px;
+}
+.res {
+    display: flex;
+    column-gap: 60px;
+}
+
+.res-left h1 {
     position: relative;
-    width: 800px; /* Adjust the width to change the length of the line */
-    height: 2px; /* Adjust the height to change the thickness of the line */
-    background-color: var(--text-color);
-    width: 100%;
+    margin-bottom: 15px;
 }
 
-.arrow-line::before,
-.arrow-line::after {
+.res-info {
+    border-left: 5px solid var(--text-color);
+    height: 170px;
+    border-bottom: 2px solid var(--bg-color);
+    padding-top: 10px;
+    background: var(--mob-color);
+}
+
+.res-info i {
+    color: var(--text-color);
+    margin: 15px;
+    font-size: 25px;
+}
+
+.res-info span {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.res-info div {
+    padding-left: 62px;
+}
+
+.res-info div h3 {
+    color: rgba(255,255,255, 0.9);
+    font-weight: normal;
+}
+
+.res-info div p {
+    color: rgba(255,255,255, 0.7);
+    font-size: 14px;
+    padding-right: 20px;
+    width: 470px;
+}
+
+.res-right h1 {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.skills {
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.skill-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skill-container .progress {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #fff;
+    background: #444 linear-gradient(to right, transparent 50%, var(--clr) 0);
+}
+
+.skill-container .progress h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    z-index: 1;
+    font-weight: 500;
+}
+
+.skill-container .progress h3 span {
+    font-size: 0.65rem;
+    font-weight: 400;
+}
+
+.skill-container .progress h4 {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-weight: 500;
+    color: var(--clr);
+    text-transform: uppercase;
+}
+
+.skill-container .progress::before {
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+
+.skill-container .progress::after {
     content: '';
     position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
+    inset: 10px;
+    border-radius: 50%;
+    background: var(--bg-color);
 }
 
-.arrow-line::before {
-    border-width: 8px 16px 8px 0;
-    border-color: transparent var(--text-color) transparent transparent;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+.skill-container .progress::before {
+    background: var(--clr);
+    transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
 }
 
-.arrow-line::after {
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent var(--text-color);
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+/* if value is less than 50%, then */
+
+.skill-container .progress.less::before {
+    background: #444;
+    transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
 }
 
-.resume-container {
-    text-align: left;
-    margin-top: 30px;
-    margin-left: 250px;
-    margin-right: 150px;
-}
 
-.heading {
-    display: flex;
-    margin-bottom: 30px;
-}
-.heading span {
-    margin-right: 20px;
-    background-color: #262627;
-    padding: 10px;
-    border-radius: 15px;
-} 
-.heading span i {
-    color: #00fbff;
-    font-size: 20px;
-}
-.heading h1 {
-    color: #fff;
-    margin-top: 5px;
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.heading-info {
-    display: flex;
-    color: white;
-}
-.heading-info span {
-    padding: 10px;
-    margin-right: 25px;
-    text-align: top;
-}
-.heading-info span i {
-    color: #00fbff;
-    font-size: 12px;
-}
-
-.heading-info h2{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-
-.heading-info h4 {
-    font-style: italic;
-    color: #00fbff;
-    margin-bottom: 15px;
-}
-
-.heading-info p {
-    margin-bottom: 30px;
-}
-.heading-info p span {
-    font-weight: bold;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 2px;
-}
-
-.skilled h1 {
-    color: #fff;
-}
-.skilled-info {
-    background-color: #262627;
-    height: 120px;
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 8px;
-    border-radius: 20px;
-    margin-bottom: 50px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px; /* Adjust the gap between cells */
-    height: 20px;
-    margin: 0;
-}
-
-.grid-item {
-    padding: 5px;
-    text-align: center;
-    color: #00fbff;
-    font-style: italic;
-  }
 
 /* Styling Portfolio page*/
 
@@ -748,23 +765,62 @@ form {
     .right {
         flex: -1;
     }
+
+    /*About Page Section*/
+    .abt-container {
+        flex-direction: column;
+    }
+
+    .abt-left {
+        width: 100%;
+        padding-left: 40%;
+    }
+
+    .abt-left img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        padding: 10px;
+        border: 2px solid var(--text-color);
+    }
+    .large-pic {
+        display: none;
+    }
+    .small-pic {
+        display: block;
+    }
+
     
     /*Resume Section */
 
-    .resume {
-        text-align: left;
+    .res-left h1 {
+        font-size: 30px;
     }
-
-    .resume h3 {
-        text-align:center;
+    
+    .res-info {
+        width: 410px;
+        height: 170px;
     }
-
-    .resume-container {
-        margin-left: 30px;
+    
+    
+    .res-info span {
+        font-size: 18px;
     }
-
-    .resume-container .skilled .grid{
-        height: 40px;
+    
+    .res-info div h3 {
+        font-size: 16px;
+    }
+    
+    .res-info div p {
+        font-size: 12px;
+        padding-right: 20px;
+        width: 350px;
+    }
+    
+    .res-right h1 {
+        position: relative;
+        margin-bottom: 15px;
+        font-size: 30px;
     }
 }
 
@@ -790,23 +846,57 @@ form {
         height: 375px;
     }
 
-    /*Reduced Resume page*/
-    .skilled {
+    /* About Page Section*/
+    .abt-left {
+        width: 100%;
         text-align: center;
-        justify-content: center;
+        padding-left: 0;
+        padding-bottom: 20px;
     }
 
-    .skilled-info {
-        height: 200px;
+    /*Reduced Resume page*/
+    .res {
+        display: flex;
+        column-gap: 60px;
+        flex-direction: column;
     }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        gap: 10px; /* Adjust the gap between cells */
-        height: 90px;
-        margin: 0;
+    
+    .res-left h1 {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    
+    .res-info {
+        width: 550px;
+        height: 170px;
+    }
+    
+    .res-info i {
+        font-size: 25px;
+    }
+    
+    .res-info span {
+        font-size: 20px;
+    }
+    
+    .res-info div {
+        padding-left: 62px;
+    }
+    
+    .res-info div h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .res-info div p {
+        font-size: 14px;
+        padding-right: 20px;
+        width: 470px;
+    }
+    
+    .res-right h1 {
+        position: relative;
+        margin-bottom: 15px;
     }
 
     /*Reduced portfolio page*/
@@ -891,15 +981,25 @@ form {
     }
 
     /*Reduced About Page*/
-
-    .who {
-        margin: 0;
+    .abt-right .abt-info {
+        grid-template-columns: 1fr;
     }
 
-    .first {
-        margin: 0px 0px;
+    /*Resume Page */
+    .res-info {
+        width: 450px;
+        height: 170px;
     }
 
+    .res-info div p {
+        font-size: 14px;
+        padding-right: 20px;
+        width: 390px;
+    }
+
+    .res-right {
+        margin-bottom: 20px;
+    }
 
     /* Contact Reduced pages*/
     .glass-container a {
