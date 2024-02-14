@@ -208,47 +208,59 @@
     </section>
 
     <section id="Contactpage" class="contact">
-        <div class="contact-page">
-        <div class="glass-container">
-            <h3>Get in touch.</h3>
-            <p>We're thrilled to hear from you. Whether you have a question, a suggestion, 
-               or just want to say hi, feel free to drop us a message. Our team is here to 
-               assist you in any way we can.</p>
-            <a href="#"><i class="fa-solid fa-envelope"></i> nkatekotshepisom@gmail.com</a>
-            <a href="#"><i class="fa-solid fa-phone"></i> +27 (64) 738 7366</a>
-            <div class="social">
-                <a href="https://www.instagram.com/tshxpis0_/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://za.linkedin.com/in/nkateko-tshepiso-matshinye-852905217"><i class="fa-brands fa-linkedin"></i></a>
+        <h1>Get in Touch</h1>
+        <div class="head-text">CONTACT</div>
+        <div class="container">
+            <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="form-contain">
+                <input type="hidden" name="access_key" value="dede6175-108a-47bc-9699-693bbfdb12de">
+                <h2>Message Me</h2>
+                <div class="inputs">
+                    <input type="text" id="name" name="Full Name" placeholder="Full Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <textarea name="Message" id="Message" cols="30" rows="9" placeholder="Message" required></textarea>
+                <div class="send">
+                <input type="submit" value="Send Message">
+                </div>
             </div>
-        </div>
+            </form>
 
-        <form action="https://api.web3forms.com/submit" method="POST">
-        <div class="form-contain">
-            <input type="hidden" name="access_key" value="dede6175-108a-47bc-9699-693bbfdb12de">
-            <div class="form-one">
-            <label for="first-name" class="fname">First name:</label><br/>
-            <input type="text" id="first-name" name="first-name" required>
+            <div class="in-touch">
+                <h2>Contact Info</h2>
+                <p>Open for freelance opportunities tailored to your needs! Reach out anytime to discuss your project requirements. Looking forward to collaborating with you!</p>
+                <div class="flex-container">
+                    <div class="left-column">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="right-column">
+                        <span>Name</span><br/>
+                        Nkateko Matshinye
+                    </div>
+                    <div class="left-column">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="right-column">
+                        <span>Location</span><br/>
+                        Benoni,Gauteng
+                    </div>
+                    <div class="left-column">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="right-column">
+                        <span>Call Me</span><br/>
+                        +27 (64) 738 7388
+                    </div>
+                    <div class="left-column">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="right-column">
+                        <span>Email</span><br/>
+                        nkatekotshepisom@gmail.com
+                    </div>
+                </div>
             </div>
-            <div class="form-one">
-            <label for="Last-name" class="lname">Last name:</label><br/>
-            <input type="text" id="Last-name" name="Last-name" required>
-            </div>
-            <div class="form-one">
-            <label for="email">Email address:</label><br/>
-            <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-one">
-            <label for="phone">Phone number:</label><br/>
-            <input type="number" id="phone" name="phone" required>
-            </div>
-            <div class="form-one">
-            <label for="message">Message:</label><br/>
-            <textarea id="message" name="message" cols="30" rows="10" placeholder="How can we help you..."></textarea>
-            </div>
-            <button type="submit">Submit</button>
-
-        </div>
-        </form>
         </div>
     </section>
 
