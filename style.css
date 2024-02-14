@@ -1048,6 +1048,11 @@ nav .hamburger.active .bar {
     }
 
     /* Contact Reduced pages*/
+    .contact {
+        width: 565px;
+        margin-left: 5px;
+        padding: 0;
+    }
     .contact .container {
         width: 566px;
         justify-content: start;
@@ -1056,6 +1061,10 @@ nav .hamburger.active .bar {
 
     .contact h1 {
         font-size: 34px;
+    }
+
+    .head-text {
+        font-size: 80px;
     }
 
     .form-contain input {
