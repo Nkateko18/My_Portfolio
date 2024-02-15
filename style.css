@@ -669,6 +669,10 @@ nav .hamburger.active .bar {
     font-weight: 500;
 }
 
+.right-column h4 {
+    font-weight: 400;
+}
+
 
 
 @media screen and (max-width: 1280px) {
@@ -1054,8 +1058,8 @@ nav .hamburger.active .bar {
     /* Contact Reduced pages*/
     .contact {
         width: 565px;
-        margin-left: 5px;
-        padding: 0;
+        margin-left: 0;
+        padding-left: 30px;
     }
     .contact .container {
         width: 566px;
@@ -1129,10 +1133,48 @@ nav .hamburger.active .bar {
     .res-info div p {
         width: 280px;
     }
-    
-    .res-right h1 {
-        position: relative;
-        margin-bottom: 15px;
+
+
+    /*Contact Page*/
+    .contact h1 {
+        margin-top: 18px;
+    }
+    .contact .head-text {
+        font-size: 65px;
+        margin: 0;
     }
 
+    .contact .container{
+        width: 380px;
+    }
+
+    .form-contain input {
+        width: 330px;
+    }
+
+    .form-contain textarea {
+        width: 330px;
+    }
+
+    .in-touch {
+        width: 380px;
+    }
+
+    .in-touch h2 {
+        width: 300px;
+    }
+
+    .in-touch p {
+        width: 330px;
+    }
+
+    .right-column span {
+        font-size: 18px;
+    }
+
+    .right-column h4 {
+        width: 200px;
+        font-size: 16px;
+        overflow: scroll;
+    }
 }
