@@ -1010,6 +1010,10 @@ nav .hamburger.active .bar {
     }
 
     /*Resume Page */
+    .resume {
+        margin-left: 30px;
+        margin-right: 0;
+    }
     .res {
         column-gap: 50px;
     }
@@ -1090,5 +1094,9 @@ nav .hamburger.active .bar {
     .right-column {
         flex: 0 0 390px;
     }
+
+}
+
+@media screen and (max-width: 391px) {
 
 }
