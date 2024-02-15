@@ -1098,5 +1098,41 @@ nav .hamburger.active .bar {
 }
 
 @media screen and (max-width: 391px) {
+    /*Resume Page*/
+    .res {
+        column-gap: 50px;
+    }
+    
+    .res-left h1 {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    
+    .res-info {
+        width: 340px;
+        height: 190px;
+    }
+    
+    .res-info i {
+        font-size: 25px;
+    }
+    
+    .res-info span {
+        font-size: 14px;
+    }
+    
+    .res-info div h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .res-info div p {
+        width: 280px;
+    }
+    
+    .res-right h1 {
+        position: relative;
+        margin-bottom: 15px;
+    }
 
 }
