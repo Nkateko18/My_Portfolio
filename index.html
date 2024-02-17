@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/Nkateko's Logo.png" style="border-radius: 50%;">
+    <link rel="icon" href="images/Logo.png" style="border-radius: 50%;">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -178,33 +178,63 @@
     </section>
 
     <section id="Portfoliopage" class="portfolio">
-        <h3>Portfolio</h3>
+        <h1>My Portfolio</h1>
+        <div class="head-text">PORTFOLIO</div>
         <div class="search">
-            <a href="#" onclick="filterItems('All')">All</a><span class="divider">|</span>
-            <a href="#" onclick="filterItems('Software-developer')">Software projects</a><span class="divider">|</span>
-            <a href="#" onclick="filterItems('UX-design')">UX Design projects</a><span class="divider">|</span>
+            <a href="#" class="active" onclick="filterItems('All', this)">All</a>
+            <a href="#" onclick="filterItems('Software-developer', this)">Software projects</a>
+            <a href="#" onclick="filterItems('UX-Designer', this)">UX Design projects</a>
         </div>
-        <div class="grid">
-            <a href="https://github.com/Nkateko18/Apple-Homepage-Project"><div class="grid-item Software-developer">
-                <img src="images/Apple homapage.png" alt="Apple-Homepage">
-                <h4>Apple Homepage</h4>
-                <h5>Web development</h5>
-            </div></a>
-            <a href="https://i5vvp5.axshare.com/"><div class="grid-item UX-design">
-                <img src="images/BP Persona.png" alt="BP-User">
-                <h4>BP User Persona</h4>
-                <h5>User Experience Design</h5>
-            </div></a>
-            <a href="https://dr4qwb.axshare.com/"><div class="grid-item UX-design">
-                <img src="images/Portfolio design.png" alt="Portfolio">
-                <h4>Portfolio Prototype</h4>
-                <h5>User Experience Design</h5></div></a>
-            <a href="https://p9b6m9.axshare.com/"><div class="grid-item UX-design">
-                <img src="images/CollaborateU.png" alt="CollaborateU" id="UX-design">
-                <h4>CollaborateU Prototype</h4>
-                <h5>User Experience Design</h5>
-            </div></a>
+        <div class="project">
+            <div class="project-item Software-developer">
+                <img src="images/Apple.com.png" alt="apple">
+                <div class="project-content">
+                    <i class="fa-brands fa-github"></i>
+                    <p>
+                        Nkateko successfully develops a clone of Apple's homepage that closely mirrors the original in terms of design, responsiveness, and interactivity. The project serves as a testament to Nkateko's growth as a web developer and showcases their ability to tackle complex front-end challenges
+                    </p>
+                    <a href="https://github.com/Nkateko18/Apple-Homepage-Project">Quick View</a>
+                </div>
+                <div class="project-head">Apple Homepage</div>
+            </div>
+
+            <div class="project-item UX-Designer">
+                <img src="images/BP Persona (1).png" alt="apple">
+                <div class="project-content">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <p>
+                        Nkateko is a 22-year-old professional who is passionate about sustainability and has recently purchased an electric vehicle (EV). He works in a city and commutes daily. Nkateko is committed to reducing his carbon footprint and believes in the importance of clean energy. He is tech-savvy and embraces technology that aligns with his values.
+                    </p>
+                    <a href="https://i5vvp5.axshare.com/?id=rqdhno&p=page_1">Quick View</a>
+                </div>
+                <div class="project-head">BP User Persona</div>
+            </div>
+
+            <div class="project-item UX-Designer">
+                <img src="images/Portfolio.png" alt="apple">
+                <div class="project-content">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <p>
+                        Nkateko sits at his desk, surrounded by sketches and notes. With a clear vision in mind, he begins brainstorming ideas for his homepage, contemplating how to effectively showcase his skills and personality. Sipping on a cup of coffee, he drafts rough wireframes and envisions the layout and flow of the page.
+                    </p>
+                    <a href="https://dr4qwb.axshare.com/?id=wz41bv&p=home">Quick View</a>
+                </div>
+                <div class="project-head">Portolio Prototype</div>
+            </div>
+
+            <div class="project-item UX-Designer">
+                <img src="images/CollaborateU (1).png" alt="apple">
+                <div class="project-content">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <p>
+                        The project, named CollaborateU, was initiated as a part of a school assignment to create a website that caters to the academic needs of students. The primary goal was to design an interactive platform that fosters online learning, collaboration, and information sharing among peers.
+                    </p>
+                    <a href="https://p9b6m9.axshare.com/?id=2iflwq&p=home">Quick View</a>
+                </div>
+                <div class="project-head">ColloborateU</div>
+            </div>
         </div>
+        
     </section>
 
     <section id="Contactpage" class="contact">

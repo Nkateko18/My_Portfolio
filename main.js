@@ -35,20 +35,26 @@ function showSection(sectionId) {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Set "All" as the default category when the page loads
-    filterItems('All');
-});
 
-function filterItems(category) {
-    const gridItems = document.querySelectorAll('.grid-item');
+function filterItems(category, element) {
+    const projectItems = document.querySelectorAll('.project-item');
+    const filterLinks = document.querySelectorAll('.search a');
 
-    gridItems.forEach(item => {
-        if (category === 'All' || item.classList.contains(category)) {
-            item.classList.remove('hide');
+    // Remove active class from all filter links
+    filterLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    // Add active class to the clicked filter link
+    element.classList.add('active');
+
+    projectItems.forEach(item => {
+        if (category === 'All') {
+            item.style.display = 'block'; // Show all items
+        } else if (item.classList.contains(category)) {
+            item.style.display = 'block'; // Show items with matching category
         } else {
-            item.classList.add('hide');
+            item.style.display = 'none'; // Hide items without matching category
         }
     });
 }
-
