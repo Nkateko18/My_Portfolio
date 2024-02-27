@@ -1222,6 +1222,18 @@ nav .hamburger.active .bar {
         font-size: 20px;
     }
 
+    .project-content {
+        opacity: 1;
+    }
+
+    .project-content i {
+        font-size: 30px;
+    }
+
+    .project-content p {
+        font-size: 12px;
+    }
+
 
     /*Contact Page*/
     .contact {
